@@ -2,7 +2,7 @@
   max-width: 100%;
   background-color: $color-ghost-white;
 
-  h1 {
+  h2 {
     margin: 0;
     padding-top: 120px;
     text-align: center;
@@ -111,6 +111,15 @@
 .tabs__content {
   margin-bottom: 40px;
   transition: height 0.3s;
+  min-height: 566px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .tabs__element {
@@ -172,15 +181,22 @@
   }
 
   p {
-    padding-top: 50px;
-    padding-bottom: 5px;
+    padding-top: 55px;
+    padding-bottom: 10px;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 26px;
+    line-height: 29px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 55px;
+      padding-bottom: 12px;
+    }
 
     @media (max-width: $mobile-width) {
       padding-top: 43px;
       padding-bottom: 9px;
+      font-size: 22px;
+      line-height: 24px;
     }
   }
 
@@ -223,11 +239,20 @@
 }
 
 .tabs__text {
-  margin-top: 55px;
-  margin-bottom: 22px;
+  margin-top: 65px;
+  margin-bottom: 27px;
   margin-left: 8px;
   display: flex;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 61px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 53px;
+  }
 
   p,
   span {
