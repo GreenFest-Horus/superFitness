@@ -1,4 +1,6 @@
-const initSwipers = () => {
+/* import './modules/slider/swiper'; */
+
+/* const initSwipers = () => {
   if (document.querySelector('.coaches__swiper')) {
     const coachesSwiper = new Swiper ('.coaches__swiper', { // eslint-disable-line
       direction: 'horizontal',
@@ -46,4 +48,4 @@ const initSwipers = () => {
   }
 };
 
-export {initSwipers};
+export {initSwipers}; */
