@@ -2268,7 +2268,7 @@ button,
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 37px 105px;
+  padding: 37px 0;
   width: 100%;
   margin: 0;
 }
@@ -2276,12 +2276,12 @@ button,
   .tabs__element {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
-    padding: 43px 163px;
+    padding: 43px 118px;
   }
 }
 @media (max-width: 767px) {
   .tabs__element {
-    padding: 35px 15px;
+    padding: 35px 0;
   }
 }
 .tabs__element p {
