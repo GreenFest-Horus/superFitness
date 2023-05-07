@@ -213,7 +213,7 @@
       bottom: 0;
       left: 0;
       border: 7px solid $color-smalt;
-      border-image: $sale-red-to-blue;
+      border-image: $special-red-to-blue;
       border-image-slice: 1;
       pointer-events: none;
     }
@@ -231,7 +231,7 @@
 
     &:hover,
     &:focus {
-      background-image: $sale-red-to-blue;
+      background-image: $special-red-to-blue;
       color: $color-default-white;
       outline: none;
     }

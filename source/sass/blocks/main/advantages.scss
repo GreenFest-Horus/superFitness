@@ -1,13 +1,16 @@
 .advantages {
   background-color: $color-ghost-white;
   padding-top: 97px;
+  padding-bottom: 115px;
 
   @media (max-width: $tablet-width) {
     padding-top: 90px;
+    padding-bottom: 94px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding-top: 62px;
+    padding-bottom: 64px;
   }
 
   h2 {

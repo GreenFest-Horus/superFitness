@@ -295,7 +295,6 @@
       <section class="coaches" id="coaches">
         <div class="coaches__container">
           <h2>Тренеры</h2>
-          <!-- Слайдер -->
           <div class="coaches__content">
             <div class="coaches__button coaches__button--prev swiper-button-prev"></div>
             <div class="coaches__swiper swiper">
@@ -583,6 +582,51 @@
           </div>
         </div>
       </section>
+      <section class="special" id="special">
+        <div class="container">
+          <div class="special__wrapper">
+            <h2>Акции</h2>
+            <div class="special__content">
+              <div class="special__subscription-wrapper">
+                <div class="special__subscription">
+                  <h3>Год</h3>
+                  <p>4999</p>
+                  <span>Безлимитный абонемент в тренажерный зал</span>
+                  <a class="special__link special__link--subscription" href="#!">Подробнее</a>
+                </div>
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/special-mobile@1x.webp 1x, ./img/special-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/special-tablet@1x.webp 1x, ./img/special-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/special-desktop@1x.webp 1x, ./img/special-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/special-mobile@1x.jpg 1x, ./img/special-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/special-tablet@1x.jpg 1x, ./img/special-tablet@2x.jpg 2x">
+                    <img src="./img/special-desktop@1x.jpg" srcset="./img/special-desktop@2x.jpg 2x" width="399"
+                      height="462" alt="Девушка в спортивном костюме." loading="lazy">
+                  </picture>
+                </div>
+              </div>
+              <ul class="special__list">
+                <li class="special__item">
+                  <p>Месяц бесплатно</p>
+                  <span>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</span>
+                  <a class="special__link special__link--list" href="#!">Подробнее</a>
+                </li>
+                <li class="special__item">
+                  <p>Скидка&nbsp;20%</p>
+                  <span>Корпоративный фитнес с&nbsp;командой</span>
+                  <a class="special__link special__link--list" href="#!">Подробнее</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="comments">
         <h2>Отзывы</h2>
         <div class="comments__swiper swiper">
@@ -611,7 +655,7 @@
               <div class="comments__img-wrapper">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/comments-mobile-2@1x.webp 1x, ./im/comments-mobile-2@2x.webp 2x">
+                    srcset="./img/comments-mobile-2@1x.webp 1x, ./img/comments-mobile-2@2x.webp 2x">
                   <source type="image/webp"
                     srcset="./img/comments-desktop-2@1x.webp 1x, ./img/comments-desktop-2@2x.webp 2x">
                   <source media="(max-width: 767px)"
@@ -620,19 +664,15 @@
                     height="80" alt="Фото комментатора 2." loading="lazy">
                 </picture>
               </div>
-              <div class="comments__description">
-                <h3>
-                  Дейенерис из&nbsp;дома Таргариен, именуемая первой, Неопалимая, Королева Миэрина, Королева
-                  Андалов, Ройнаров и&nbsp;Первых Людей, Кхалиси Дотракийского Моря, Разбивающая Оковы и&nbsp;Матерь
-                  Драконов
-                </h3>
-                <blockquote>
-                  &laquo;Занимаюсь в&nbsp;SuperClub уже целый год. Все отлично, большая площадь позволяет заниматься
-                  всем Безупречным,
-                  но&nbsp;не&nbsp;хватает зала
-                  для тренировки драконов&raquo;
-                </blockquote>
-              </div>
+              <h3>
+                Кайафас Каин - имперский комиссар
+              </h3>
+              <blockquote>
+                &laquo;Занимаюсь в&nbsp;SuperClub уже несколько лет. Неплохой зал,
+                огринам очень нравится,
+                но&nbsp;не&nbsp;хватает тира
+                где огрины могли бы выпустить пар&raquo;
+              </blockquote>
             </li>
           </ul>
           <div class="comments__button comments__button--prev swiper-button-prev"></div>

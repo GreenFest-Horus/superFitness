@@ -1,0 +1,241 @@
+.special__wrapper {
+  padding-top: 99px;
+  padding-bottom: 80px;
+
+  color: $color-resolution-blue;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 91px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 34px;
+    font-family: $ff-alumni-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $color-sapphire;
+
+    @media (max-width: $tablet-width) {
+      transform: translateX(-4px);
+      margin-bottom: 40px;
+      font-size: 42px;
+      line-height: 51px;
+    }
+
+    @media (max-width: $mobile-width) {
+      transform: translateX(-3px);
+      margin-bottom: 42px;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+}
+
+.special__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5%;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.special__subscription-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+    grid-template-columns: max-content 1fr;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+}
+
+.special__subscription {
+  padding: 33px 45px 43px;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    max-width: 280px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  p {
+    margin: 0;
+    margin-top: -25px;
+    margin-bottom: -2px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 110px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: -6px;
+    }
+  }
+
+  span {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.special__link {
+  width: 78px;
+  margin-top: auto;
+  padding: 0 0 2px 0;
+  border: none;
+  border-bottom: 2px solid $color-resolution-blue;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $color-resolution-blue;
+  text-align: left;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-golden-yellow;
+  }
+
+  &:active {
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &--subscription {
+    border-color: $color-default-white;
+    color: $color-default-white;
+  }
+
+  &--list {
+    width: 70px;
+    font-size: 12px;
+    line-height: 16px;
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px $color-crimson;
+    }
+  }
+}
+
+.special__img-wrapper {
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.special__list {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  grid-auto-rows: 1fr;
+  row-gap: 40px;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.5%;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.special__item {
+  padding: 22px 34px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid $color-crimson;
+    border-image: $special-red-to-blue;
+    border-image-slice: 1;
+    pointer-events: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 211px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 32px;
+    padding-bottom: 43px;
+    align-items: center;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 44px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 2px;
+    }
+  }
+
+  span {
+    margin-bottom: 10px;
+
+    @media (max-width: $tablet-width) {
+      letter-spacing: 0.01em;
+    }
+  }
+}
