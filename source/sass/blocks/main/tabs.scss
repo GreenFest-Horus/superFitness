@@ -33,6 +33,10 @@
   }
 }
 
+.tabs__description {
+  position: relative;
+}
+
 .tabs__controls {
   position: relative;
   display: grid;
@@ -288,5 +292,25 @@
       font-size: 80px;
       text-shadow: -16px -21px 0 $color-whisper;
     }
+  }
+}
+
+.tabs__img-wrapper {
+  position: absolute;
+  z-index: 0;
+  top: 32.7%;
+  right: 0;
+
+  @media (max-width: $tablet-width) {
+    top: 40.4%;
+
+    img {
+      width: 348px;
+      height: 439px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }

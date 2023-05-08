@@ -1,0 +1,135 @@
+.form {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-default-white;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    width: 472px;
+    transform: translateX(-17px);
+  }
+
+  @media (max-width: $mobile-width) {
+    transform: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: $ff-alumni-sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 85px;
+    letter-spacing: 0.03em;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 30px;
+      font-size: 42.5px;
+      line-height: 51px;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 31px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 0.03em;
+    }
+  }
+}
+
+.form__inputs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 25px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+    gap: 62px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 36px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.form__input {
+  position: relative;
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+    padding: 11px 10px 9px 0;
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $color-golden-yellow;
+    }
+
+    &:active,
+    &:focus-within {
+      background-color: $color-default-white;
+      color: $color-sapphire;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding-top: 8px;
+      padding-bottom: 7px;
+    }
+  }
+
+  input:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px $color-sapphire;
+    -webkit-text-fill-color: $color-default-white;
+    color: $color-default-white;
+  }
+
+  &.is-invalid {
+    input {
+      border-color: $color-golden-yellow;
+    }
+
+    span {
+      color: $color-golden-yellow;
+    }
+
+    .input-message {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 1px);
+    }
+  }
+}
+
+.form__submit-button {
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  border-width: 3px;
+  border-color: $color-default-white;
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $color-default-white;
+  background-color: transparent;
+}
