@@ -1532,31 +1532,29 @@ button,
 }
 
 .header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
 }
 
 .header__logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
   color: #ffffff;
 }
 
 .header__tel {
-  width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: end;
+  place-self: start end;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   gap: 15px;
+  max-width: 30%;
 }
 
 .header__tel-link {
@@ -3942,7 +3940,7 @@ button,
   }
 
   .header__tel {
-    width: 60%;
+    max-width: 60%;
   }
 
   .header__tel-link {
@@ -4549,6 +4547,10 @@ button,
   .header__logo svg {
     width: 69px;
     height: 24px;
+  }
+
+  .header__tel {
+    max-width: 100%;
   }
 
   .header__tel-link {
