@@ -132,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="tabs">
+      <section class="tabs" id="tabs">
         <div class="container">
           <h2>
             Абонементы
@@ -250,6 +250,18 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="tabs__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/tabs-tablet@1x.webp 1x, ./img/tabs-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/tabs-desktop@1x.webp 1x, ./img/tabs-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/tabs-tablet@1x.png 1x, ./img/tabs-tablet@2x.png 2x">
+              <img src="./img/tabs-desktop@1x.png" srcset="./img/tabs-desktop@2x.png 2x"
+                width="287" height="494" alt="Блины." loading="lazy">
+            </picture>
           </div>
         </div>
       </section>
@@ -679,6 +691,74 @@
           <div class="comments__button comments__button--next swiper-button-next"></div>
         </div>
       </section>
+      <section class="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__wrapper">
+            <div class="contacts__form-wrapper">
+              <div class="form" data-form-validate data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <h2>Бесплатное занятие </h2>
+                  <div class="form__inputs-wrapper">
+                    <div class="form__input" data-validate-type="text" data-required
+                      data-message-base="Заполните это поле">
+                      <label for="name" aria-label="Поле для ввода имени">
+                        <input type="text" name="name" id="name" placeholder="Имя" required>
+                      </label>
+                    </div>
+                    <div class="form__input" data-validate-type="phone" data-required
+                      data-message-base="Заполните это поле">
+                      <label for="phone" aria-label="Поле для ввода телефонного номера">
+                        <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="form__submit-button" type="submit">
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="contacts__info-wrapper">
+              <h3>Контакты</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--adress">
+                  <dl>
+                    <dt>Адрес:</dt>
+                    <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+                  </dl>
+                </li>
+                <li class="contacts__item contacts__item--tel">
+                  <dl>
+                    <dt>Телефон:</dt>
+                    <dd>
+                      <a class="contacts__link" href="tel:88005555555" aria-label="Позвонить нам по номеру">
+                        8-800-555-55-55
+                      </a>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="contacts__item contacts__item--timeline">
+                  <dl>
+                    <dt>График работы:</dt>
+                    <dd>Пн-Вс: с 8:00 до 22:00</dd>
+                  </dl>
+                </li>
+                <li class="contacts__item">
+                  <dl>
+                    <dt>Email:</dt>
+                    <dd>
+                      <a class="contacts__link" href="mailto:info@sd.ru"
+                        aria-label="Написать нам письмо на электронную почту">
+                        omsk@supergym.ru
+                      </a>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -696,10 +776,10 @@
                 <a class="footer__link" href="#!">Услуги</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#catalog">Абонементы</a>
+                <a class="footer__link" href="#tabs">Абонементы</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#sale">Акции</a>
+                <a class="footer__link" href="#spacial">Акции</a>
               </li>
               <li class="footer__item">
                 <a class="footer__link" href="#coaches">Тренеры</a>
