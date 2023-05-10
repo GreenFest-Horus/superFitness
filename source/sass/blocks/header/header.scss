@@ -24,6 +24,8 @@
 .header__logo {
   grid-column: 1/2;
   color: $color-default-white;
+  width: max-content;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -41,6 +43,15 @@
       height: 24px;
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__tel {
@@ -48,6 +59,7 @@
   grid-column: 2/3;
   gap: 15px;
   max-width: 30%;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     max-width: 60%;
@@ -55,6 +67,15 @@
 
   @media (max-width: $mobile-width) {
     max-width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -208,6 +229,7 @@
   outline: 4px solid $color-default-white;
   letter-spacing: 0.5px;
   text-align: center;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     margin-top: 38px;
@@ -220,6 +242,19 @@
     top: 102%;
     left: 1%;
     right: 1%;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+    opacity: 0.3;
   }
 }
 

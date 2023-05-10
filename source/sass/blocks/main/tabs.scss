@@ -12,7 +12,7 @@
     line-height: 65px;
     font-family: $ff-alumni-sans;
     letter-spacing: 1.5px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 
     @media (max-width: $tablet-width) {
       font-size: 42px;
@@ -79,6 +79,7 @@
 .tabs__control {
   position: relative;
   padding: 0;
+  padding-top: 2px;
   background-color: transparent;
   border: none;
   font-family: $ff-roboto-condensed;
@@ -87,6 +88,7 @@
   opacity: 0.5;
   min-width: auto;
   justify-content: center;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     padding: 15px 0;
@@ -109,6 +111,11 @@
         bottom: 0;
       }
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
   }
 }
 
@@ -232,12 +239,20 @@
     line-height: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    user-select: none;
 
     &:hover,
     &:focus {
       background-image: $special-red-to-blue;
       color: $color-default-white;
       outline: none;
+    }
+
+    &:active {
+      background-image: $special-red-to-blue;
+      color: $color-default-white;
+      outline: none;
+      opacity: 0.5;
     }
   }
 }
