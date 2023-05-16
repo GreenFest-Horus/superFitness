@@ -25,7 +25,13 @@
   @media (max-width: $tablet-width) {
     width: 52px;
     height: 52px;
+    right: 43%;
+    top: 37%;
+  }
+
+  @media (max-width: $tablet-medium-width) {
     right: 41%;
+    top: 34%;
   }
 
   @media (max-width: $mobile-width) {
