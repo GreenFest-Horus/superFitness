@@ -2523,10 +2523,12 @@ button,
 
 .comments__button--prev {
   left: 4px;
+  top: 122px;
 }
 
 .comments__button--next {
   right: 4px;
+  top: 122px;
 }
 
 .comments__button--next::before {
@@ -4984,10 +4986,12 @@ button,
 
   .comments__button--prev {
     left: 10px;
+    top: 168px;
   }
 
   .comments__button--next {
     right: 10px;
+    top: 168px;
   }
 
   .coaches {
