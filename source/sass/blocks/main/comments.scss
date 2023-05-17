@@ -161,6 +161,7 @@
 
   &--prev {
     left: 4px;
+    top: 122px;
 
     @media (max-width: $tablet-width) {
       left: 47px;
@@ -168,11 +169,13 @@
 
     @media (max-width: $mobile-width) {
       left: 10px;
+      top: 168px;
     }
   }
 
   &--next {
     right: 4px;
+    top: 122px;
 
     &::before {
       transform: rotate(-135deg);
@@ -184,6 +187,7 @@
 
     @media (max-width: $mobile-width) {
       right: 10px;
+      top: 168px;
     }
   }
 

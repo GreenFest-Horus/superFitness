@@ -3078,6 +3078,7 @@ button,
 }
 .comments__button--prev {
   left: 4px;
+  top: 122px;
 }
 @media (max-width: 1199px) {
   .comments__button--prev {
@@ -3087,10 +3088,12 @@ button,
 @media (max-width: 767px) {
   .comments__button--prev {
     left: 10px;
+    top: 168px;
   }
 }
 .comments__button--next {
   right: 4px;
+  top: 122px;
 }
 .comments__button--next::before {
   -webkit-transform: rotate(-135deg);
@@ -3105,6 +3108,7 @@ button,
 @media (max-width: 767px) {
   .comments__button--next {
     right: 10px;
+    top: 168px;
   }
 }
 .comments__button:focus, .comments__button:hover {
